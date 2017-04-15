@@ -1,0 +1,16 @@
+{
+  "name": "mythotopia",
+  "version": "0.0.1",
+  "description": "Online adaptation of the board game 'Mythotopia' by Martin Wallace",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "beardsley.james",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.3"
+  }
+}
