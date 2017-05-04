@@ -118,6 +118,7 @@ function init(options){
 		}
 		player.cards.deck.forEach(function(province){
 			player.provinces.push(province.key);
+			game.map[province.key].owner = player.player;
 			player.counters.towns --
 		})
 		for (var key in starterCards){

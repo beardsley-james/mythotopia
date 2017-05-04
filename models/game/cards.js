@@ -71,7 +71,7 @@ exports.fixedVP = {
 }
 
 exports.starterCards = {
-	"build": {
+	"buildStart": {
 		"type": "starter",
 		"name": "Build",
 		"resource": [
@@ -79,7 +79,7 @@ exports.starterCards = {
 		],
 		"action": "build"
 	},
-	"army": {
+	"armyStart": {
 		"type": "starter",
 		"name": "Army",
 		"resource": [
@@ -88,7 +88,7 @@ exports.starterCards = {
 			"gold"
 		]
 	},
-	"market": {
+	"marketStart": {
 		"type": "starter",
 		"name": "Market",
 		"resource": [
@@ -97,7 +97,7 @@ exports.starterCards = {
 			"brick"
 		]
 	},
-	"ship": {
+	"shipStart": {
 		"type": "starter",
 		"name": "Ship",
 		"resource": [

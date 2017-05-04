@@ -10,16 +10,22 @@ var options = {
 	"numberPlayers": 4,
 	"playerNames": ["James", "Kelly", "Conrad", "Margot"]
 }
-// var newGame = game(options);
-var newGame = require('./scratchpad/sampleGame.js')
 
 app.get('/', function(req, res){
+	var newGame = require('./scratchpad/sampleGame.js')
+//	var newGame = game(options);
 	var output = "<!doctype HTML><html><body>";
-	action.placeArmies(newGame, "kinabra", "James", 3)
-	output += JSON.stringify(newGame.map["kinabra"]);
+	runTest(newGame);
+	output += JSON.stringify(newGame);
 	output += "</body></html>";
 	res.send(output)
 })
 
 app.listen(3000, function() {
 })
+
+var runTest = function(game){
+	action.placeArmies(game, "peened", "Kelly", 4);
+	action.endWar(game, "peened", "Kelly");
+	console.log(game.players[1].cards.discard);
+}

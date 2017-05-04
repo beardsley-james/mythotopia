@@ -6,65 +6,9 @@ module.exports = {
 			"cards": {
 				"deck": [
 					{
-						"key": "kinabra",
-						"name": "Kinabra",
-						"resource": "brick"
-					},
-					{
-						"key": "ambsace",
-						"name": "Ambsace",
-						"resource": "army"
-					},
-					{
-						"key": "empyrean",
-						"name": "Empyrean",
-						"resource": "gold"
-					},
-					{
-						"key": "jeopigia",
-						"name": "Jeopigia",
-						"resource": "food"
-					},
-					{
-						"type": "starter",
-						"name": "Ship",
-						"resource": [
-							"ship",
-							"food"
-						],
-						"benefit": "transport",
-						"key": "ship"
-					}
-				],
-				"hand": [
-					{
-						"key": "ogdoad",
-						"name": "Ogdoad",
-						"resource": "brick"
-					},
-					{
 						"key": "margent",
 						"name": "Margent",
 						"resource": "brick"
-					},
-					{
-						"type": "starter",
-						"name": "Build",
-						"resource": [
-							"brick"
-						],
-						"action": "build",
-						"key": "build"
-					},
-					{
-						"type": "starter",
-						"name": "Army",
-						"resource": [
-							"army",
-							"army",
-							"gold"
-						],
-						"key": "army"
 					},
 					{
 						"type": "starter",
@@ -74,7 +18,63 @@ module.exports = {
 							"food",
 							"brick"
 						],
-						"key": "market"
+						"key": "marketStart"
+					},
+					{
+						"type": "starter",
+						"name": "Ship",
+						"resource": [
+							"ship",
+							"food"
+						],
+						"benefit": "transport",
+						"key": "shipStart"
+					},
+					{
+						"key": "eagre",
+						"name": "Eagre",
+						"resource": "food"
+					},
+					{
+						"key": "blore",
+						"name": "Blore",
+						"resource": "army"
+					}
+				],
+				"hand": [
+					{
+						"key": "mome",
+						"name": "Mome",
+						"resource": "gold"
+					},
+					{
+						"type": "starter",
+						"name": "Army",
+						"resource": [
+							"army",
+							"army",
+							"gold"
+						],
+						"key": "armyStart"
+					},
+					{
+						"key": "ogdoad",
+						"name": "Ogdoad",
+						"resource": "brick"
+					},
+					{
+						"key": "ictus",
+						"name": "Ictus",
+						"resource": "army"
+					},
+					{
+						"type": "starter",
+						"name": "Build",
+						"resource": [
+							"brick"
+						],
+						"action": "build",
+						"key": "buildStart"
 					}
 				],
 				"discard": []
@@ -92,11 +92,11 @@ module.exports = {
 				"cards": []
 			},
 			"provinces": [
-				"jeopigia",
-				"empyrean",
-				"kinabra",
+				"eagre",
+				"blore",
+				"ictus",
 				"ogdoad",
-				"ambsace",
+				"mome",
 				"margent"
 			],
 			"reserve": 2,
@@ -108,63 +108,27 @@ module.exports = {
 				"deck": [
 					{
 						"type": "starter",
-						"name": "Ship",
-						"resource": [
-							"ship",
-							"food"
-						],
-						"benefit": "transport",
-						"key": "ship"
-					},
-					{
-						"key": "palmain",
-						"name": "Palmain",
-						"resource": "food"
-					},
-					{
-						"key": "eagre",
-						"name": "Eagre",
-						"resource": "food"
-					},
-					{
-						"type": "starter",
-						"name": "Build",
-						"resource": [
-							"brick"
-						],
-						"action": "build",
-						"key": "build"
-					},
-					{
-						"type": "starter",
 						"name": "Market",
 						"resource": [
 							"gold",
 							"food",
 							"brick"
 						],
-						"key": "market"
-					}
-				],
-				"hand": [
-					{
-						"key": "trogle",
-						"name": "Trogle",
-						"resource": "gold"
+						"key": "marketStart"
 					},
 					{
-						"key": "diclesium",
-						"name": "Diclesium",
+						"key": "grimp",
+						"name": "Grimp",
+						"resource": "brick"
+					},
+					{
+						"key": "welkin",
+						"name": "Welkin",
 						"resource": "army"
 					},
 					{
-						"key": "sorner",
-						"name": "Sorner",
-						"resource": "food"
-					},
-					{
-						"key": "scombroid",
-						"name": "Scombroid",
+						"key": "darb",
+						"name": "Darb",
 						"resource": "army"
 					},
 					{
@@ -175,7 +139,43 @@ module.exports = {
 							"army",
 							"gold"
 						],
-						"key": "army"
+						"key": "armyStart"
+					}
+				],
+				"hand": [
+					{
+						"key": "remise",
+						"name": "Remise",
+						"resource": "gold"
+					},
+					{
+						"key": "ambsace",
+						"name": "Ambsace",
+						"resource": "army"
+					},
+					{
+						"key": "oxter",
+						"name": "Oxter",
+						"resource": "army"
+					},
+					{
+						"type": "starter",
+						"name": "Ship",
+						"resource": [
+							"ship",
+							"food"
+						],
+						"benefit": "transport",
+						"key": "shipStart"
+					},
+					{
+						"type": "starter",
+						"name": "Build",
+						"resource": [
+							"brick"
+						],
+						"action": "build",
+						"key": "buildStart"
 					}
 				],
 				"discard": []
@@ -193,12 +193,12 @@ module.exports = {
 				"cards": []
 			},
 			"provinces": [
-				"diclesium",
-				"eagre",
-				"sorner",
-				"trogle",
-				"palmain",
-				"scombroid"
+				"darb",
+				"grimp",
+				"welkin",
+				"oxter",
+				"remise",
+				"ambsace"
 			],
 			"reserve": 2,
 			"color": "blue"
@@ -208,20 +208,6 @@ module.exports = {
 			"cards": {
 				"deck": [
 					{
-						"key": "shog",
-						"name": "Shog",
-						"resource": "brick"
-					},
-					{
-						"type": "starter",
-						"name": "Build",
-						"resource": [
-							"brick"
-						],
-						"action": "build",
-						"key": "build"
-					},
-					{
 						"type": "starter",
 						"name": "Army",
 						"resource": [
@@ -229,28 +215,42 @@ module.exports = {
 							"army",
 							"gold"
 						],
-						"key": "army"
+						"key": "armyStart"
 					},
 					{
-						"key": "quean",
-						"name": "Quean",
+						"key": "sorner",
+						"name": "Sorner",
+						"resource": "food"
+					},
+					{
+						"key": "kinabra",
+						"name": "Kinabra",
 						"resource": "brick"
 					},
 					{
-						"key": "peened",
-						"name": "Peened",
+						"key": "diclesium",
+						"name": "Diclesium",
 						"resource": "army"
+					},
+					{
+						"key": "fadge",
+						"name": "Fadge",
+						"resource": "brick"
 					}
 				],
 				"hand": [
 					{
-						"key": "nusus",
-						"name": "Nusus",
-						"resource": "food"
+						"type": "starter",
+						"name": "Build",
+						"resource": [
+							"brick"
+						],
+						"action": "build",
+						"key": "buildStart"
 					},
 					{
-						"key": "welkin",
-						"name": "Welkin",
+						"key": "galingale",
+						"name": "Galingale",
 						"resource": "army"
 					},
 					{
@@ -261,7 +261,7 @@ module.exports = {
 							"food"
 						],
 						"benefit": "transport",
-						"key": "ship"
+						"key": "shipStart"
 					},
 					{
 						"type": "starter",
@@ -271,12 +271,12 @@ module.exports = {
 							"food",
 							"brick"
 						],
-						"key": "market"
+						"key": "marketStart"
 					},
 					{
-						"key": "iracund",
-						"name": "Iracund",
-						"resource": "food"
+						"key": "dragonate",
+						"name": "Dragonate",
+						"resource": "gold"
 					}
 				],
 				"discard": []
@@ -294,12 +294,12 @@ module.exports = {
 				"cards": []
 			},
 			"provinces": [
-				"welkin",
-				"shog",
-				"peened",
-				"quean",
-				"iracund",
-				"nusus"
+				"dragonate",
+				"sorner",
+				"fadge",
+				"diclesium",
+				"kinabra",
+				"galingale"
 			],
 			"reserve": 2,
 			"color": "green"
@@ -309,33 +309,14 @@ module.exports = {
 			"cards": {
 				"deck": [
 					{
-						"type": "starter",
-						"name": "Ship",
-						"resource": [
-							"ship",
-							"food"
-						],
-						"benefit": "transport",
-						"key": "ship"
-					},
-					{
-						"key": "fadge",
-						"name": "Fadge",
+						"key": "malebolge",
+						"name": "Malebolge",
 						"resource": "brick"
 					},
 					{
-						"key": "frampold",
-						"name": "Frampold",
-						"resource": "gold"
-					},
-					{
-						"type": "starter",
-						"name": "Build",
-						"resource": [
-							"brick"
-						],
-						"action": "build",
-						"key": "build"
+						"key": "jeopigia",
+						"name": "Jeopigia",
+						"resource": "food"
 					},
 					{
 						"type": "starter",
@@ -345,10 +326,49 @@ module.exports = {
 							"food",
 							"brick"
 						],
-						"key": "market"
+						"key": "marketStart"
+					},
+					{
+						"type": "starter",
+						"name": "Build",
+						"resource": [
+							"brick"
+						],
+						"action": "build",
+						"key": "buildStart"
+					},
+					{
+						"key": "coryphee",
+						"name": "Coryphee",
+						"resource": "food"
 					}
 				],
 				"hand": [
+					{
+						"key": "frampold",
+						"name": "Frampold",
+						"resource": "gold"
+					},
+					{
+						"key": "empyrean",
+						"name": "Empyrean",
+						"resource": "gold"
+					},
+					{
+						"type": "starter",
+						"name": "Ship",
+						"resource": [
+							"ship",
+							"food"
+						],
+						"benefit": "transport",
+						"key": "shipStart"
+					},
+					{
+						"key": "iracund",
+						"name": "Iracund",
+						"resource": "food"
+					},
 					{
 						"type": "starter",
 						"name": "Army",
@@ -357,27 +377,7 @@ module.exports = {
 							"army",
 							"gold"
 						],
-						"key": "army"
-					},
-					{
-						"key": "ictus",
-						"name": "Ictus",
-						"resource": "army"
-					},
-					{
-						"key": "darb",
-						"name": "Darb",
-						"resource": "army"
-					},
-					{
-						"key": "remise",
-						"name": "Remise",
-						"resource": "gold"
-					},
-					{
-						"key": "malebolge",
-						"name": "Malebolge",
-						"resource": "brick"
+						"key": "armyStart"
 					}
 				],
 				"discard": []
@@ -395,12 +395,12 @@ module.exports = {
 				"cards": []
 			},
 			"provinces": [
-				"malebolge",
 				"frampold",
-				"remise",
-				"fadge",
-				"ictus",
-				"darb"
+				"malebolge",
+				"empyrean",
+				"iracund",
+				"jeopigia",
+				"coryphee"
 			],
 			"reserve": 2,
 			"color": "yellow"
@@ -422,7 +422,8 @@ module.exports = {
 					"to": "beast",
 					"type": "coast"
 				}
-			]
+			],
+			"owner": "Kelly"
 		},
 		"aporia": {
 			"name": "Aporia",
@@ -494,7 +495,8 @@ module.exports = {
 					"to": "quean",
 					"type": "hills"
 				}
-			]
+			],
+			"owner": "James"
 		},
 		"camarine": {
 			"name": "Camarine",
@@ -542,7 +544,8 @@ module.exports = {
 				{
 					"to": "mome"
 				}
-			]
+			],
+			"owner": "Margot"
 		},
 		"custus": {
 			"name": "Custus",
@@ -587,7 +590,8 @@ module.exports = {
 					"to": "inland2",
 					"type": "coast"
 				}
-			]
+			],
+			"owner": "Kelly"
 		},
 		"diclesium": {
 			"name": "Diclesium",
@@ -611,7 +615,8 @@ module.exports = {
 				{
 					"to": "nusus"
 				}
-			]
+			],
+			"owner": "Conrad"
 		},
 		"dragonate": {
 			"name": "Dragonate",
@@ -635,7 +640,8 @@ module.exports = {
 					"to": "ogdoad",
 					"type": "hills"
 				}
-			]
+			],
+			"owner": "Conrad"
 		},
 		"eagre": {
 			"name": "Eagre",
@@ -658,7 +664,8 @@ module.exports = {
 				{
 					"to": "camarine"
 				}
-			]
+			],
+			"owner": "James"
 		},
 		"empyrean": {
 			"name": "Empyrean",
@@ -681,7 +688,8 @@ module.exports = {
 					"to": "inland2",
 					"type": "coast"
 				}
-			]
+			],
+			"owner": "Margot"
 		},
 		"eoan": {
 			"name": "Eoan",
@@ -730,7 +738,8 @@ module.exports = {
 				{
 					"to": "mome"
 				}
-			]
+			],
+			"owner": "Conrad"
 		},
 		"frampold": {
 			"name": "Frampold",
@@ -755,7 +764,8 @@ module.exports = {
 					"to": "welkin",
 					"type": "mountains"
 				}
-			]
+			],
+			"owner": "Margot"
 		},
 		"galingale": {
 			"name": "Galingale",
@@ -779,7 +789,8 @@ module.exports = {
 					"to": "hatchel",
 					"type": "hills"
 				}
-			]
+			],
+			"owner": "Conrad"
 		},
 		"grimp": {
 			"name": "Grimp",
@@ -801,7 +812,8 @@ module.exports = {
 					"to": "empyrean",
 					"type": "mountains"
 				}
-			]
+			],
+			"owner": "Kelly"
 		},
 		"hatchel": {
 			"name": "Hatchel",
@@ -851,7 +863,8 @@ module.exports = {
 				{
 					"to": "jeopigia"
 				}
-			]
+			],
+			"owner": "James"
 		},
 		"inland1": {
 			"name": "Inland Sea West",
@@ -928,7 +941,8 @@ module.exports = {
 				{
 					"to": "blore"
 				}
-			]
+			],
+			"owner": "Margot"
 		},
 		"jeopigia": {
 			"name": "Jeopigia",
@@ -946,7 +960,8 @@ module.exports = {
 				{
 					"to": "ictus"
 				}
-			]
+			],
+			"owner": "Margot"
 		},
 		"kakopyge": {
 			"name": "Kakopyge",
@@ -987,7 +1002,8 @@ module.exports = {
 				{
 					"to": "aporia"
 				}
-			]
+			],
+			"owner": "Conrad"
 		},
 		"lea": {
 			"name": "Lea",
@@ -1040,7 +1056,8 @@ module.exports = {
 					"to": "inland1",
 					"type": "coast"
 				}
-			]
+			],
+			"owner": "Margot"
 		},
 		"margent": {
 			"name": "Margent",
@@ -1058,7 +1075,8 @@ module.exports = {
 					"to": "trogle",
 					"type": "mountains"
 				}
-			]
+			],
+			"owner": "James"
 		},
 		"mome": {
 			"name": "Mome",
@@ -1088,7 +1106,8 @@ module.exports = {
 				{
 					"to": "malebolge"
 				}
-			]
+			],
+			"owner": "James"
 		},
 		"nesh": {
 			"name": "Nesh",
@@ -1165,7 +1184,8 @@ module.exports = {
 					"to": "inland2",
 					"type": "coast"
 				}
-			]
+			],
+			"owner": "James"
 		},
 		"oxter": {
 			"name": "Oxter",
@@ -1188,7 +1208,8 @@ module.exports = {
 					"to": "serpent",
 					"type": "coast"
 				}
-			]
+			],
+			"owner": "Kelly"
 		},
 		"palmain": {
 			"name": "Palmain",
@@ -1291,7 +1312,8 @@ module.exports = {
 				{
 					"to": "shog"
 				}
-			]
+			],
+			"owner": "Kelly"
 		},
 		"scombroid": {
 			"name": "Scombroid",
@@ -1401,7 +1423,8 @@ module.exports = {
 				{
 					"to": "fadge"
 				}
-			]
+			],
+			"owner": "Conrad"
 		},
 		"talion": {
 			"name": "Talion",
@@ -1460,7 +1483,8 @@ module.exports = {
 				{
 					"to": "hatchel"
 				}
-			]
+			],
+			"owner": "Kelly"
 		}
 	},
 	"cards": {
@@ -1471,29 +1495,24 @@ module.exports = {
 				"resource": "food"
 			},
 			{
-				"key": "grimp",
-				"name": "Grimp",
+				"key": "trogle",
+				"name": "Trogle",
+				"resource": "gold"
+			},
+			{
+				"key": "quean",
+				"name": "Quean",
 				"resource": "brick"
-			},
-			{
-				"key": "coryphee",
-				"name": "Coryphee",
-				"resource": "food"
-			},
-			{
-				"key": "camarine",
-				"name": "Camarine",
-				"resource": "food"
-			},
-			{
-				"key": "blore",
-				"name": "Blore",
-				"resource": "army"
 			},
 			{
 				"key": "nesh",
 				"name": "Nesh",
 				"resource": "gold"
+			},
+			{
+				"key": "nusus",
+				"name": "Nusus",
+				"resource": "food"
 			},
 			{
 				"key": "hatchel",
@@ -1506,8 +1525,8 @@ module.exports = {
 				"resource": "army"
 			},
 			{
-				"key": "mome",
-				"name": "Mome",
+				"key": "kakopyge",
+				"name": "Kakopyge",
 				"resource": "gold"
 			},
 			{
@@ -1521,32 +1540,64 @@ module.exports = {
 				"resource": "food"
 			},
 			{
-				"key": "galingale",
-				"name": "Galingale",
+				"key": "scombroid",
+				"name": "Scombroid",
 				"resource": "army"
 			},
 			{
-				"key": "dragonate",
-				"name": "Dragonate",
-				"resource": "gold"
+				"key": "camarine",
+				"name": "Camarine",
+				"resource": "food"
 			},
 			{
-				"key": "kakopyge",
-				"name": "Kakopyge",
-				"resource": "gold"
+				"key": "shog",
+				"name": "Shog",
+				"resource": "brick"
+			},
+			{
+				"key": "peened",
+				"name": "Peened",
+				"resource": "army"
+			},
+			{
+				"key": "palmain",
+				"name": "Palmain",
+				"resource": "food"
 			},
 			{
 				"key": "eoan",
 				"name": "Eoan",
 				"resource": "brick"
-			},
-			{
-				"key": "oxter",
-				"name": "Oxter",
-				"resource": "army"
 			}
 		],
 		"improvements": [
+			{
+				"type": "improvement",
+				"name": "Quarry",
+				"reserve": "quarry",
+				"key": "quarry"
+			},
+			{
+				"type": "improvement",
+				"name": "Warehouse",
+				"reserve": "warehouse",
+				"key": "warehouse"
+			},
+			{
+				"type": "improvement",
+				"name": "Levies",
+				"reserve": "levy",
+				"key": "levies"
+			},
+			{
+				"type": "improvement",
+				"name": "Portal",
+				"benefit": "portal",
+				"resource": [
+					"food"
+				],
+				"key": "portal"
+			},
 			{
 				"type": "improvement",
 				"name": "Mercenary",
@@ -1555,42 +1606,24 @@ module.exports = {
 			},
 			{
 				"type": "improvement",
-				"name": "Cavalry",
-				"reserve": "invasionStrength",
-				"key": "cavalry"
+				"name": "Merchant",
+				"benefit": "changeCardResource",
+				"key": "merchant"
 			},
 			{
 				"type": "improvement",
-				"name": "Limes",
-				"reserve": "defenseStrength",
-				"key": "limes"
+				"name": "Providence",
+				"free": "draw2",
+				"key": "providence"
 			},
 			{
 				"type": "improvement",
-				"name": "Hero",
-				"benefit": "tiebreaker",
+				"name": "General",
+				"benefit": "substitute",
 				"resource": [
 					"army"
 				],
-				"key": "hero"
-			},
-			{
-				"type": "improvement",
-				"name": "Scribe",
-				"reserve": "scribe",
-				"key": "scribe"
-			},
-			{
-				"type": "improvement",
-				"name": "Queen",
-				"reserve": "handSize",
-				"key": "queen"
-			},
-			{
-				"type": "improvement",
-				"name": "Marauders",
-				"free": "removeArmy",
-				"key": "marauders"
+				"key": "general"
 			},
 			{
 				"type": "improvement",
@@ -1604,39 +1637,35 @@ module.exports = {
 			},
 			{
 				"type": "improvement",
-				"name": "Reserve Army",
-				"reserve": "invasionImmune",
+				"name": "Hero",
+				"benefit": "tiebreaker",
 				"resource": [
 					"army"
 				],
-				"key": "reserveArmy"
+				"key": "hero"
 			},
 			{
 				"type": "improvement",
-				"name": "Farming",
-				"reserve": "farming",
-				"key": "farming"
-			},
-			{
-				"type": "improvement",
-				"name": "Warehouse",
-				"reserve": "warehouse",
-				"key": "warehouse"
-			},
-			{
-				"type": "improvement",
-				"name": "Ranger",
-				"reserve": "ranger",
-				"resource": [
-					"brick"
-				],
-				"key": "ranger"
+				"name": "Limes",
+				"reserve": "defenseStrength",
+				"key": "limes"
 			},
 			{
 				"type": "improvement",
 				"name": "Alchemist",
 				"action": "alchemy",
 				"key": "alchemist"
+			},
+			{
+				"type": "improvement",
+				"name": "Ship",
+				"benefit": "transport",
+				"resource": [
+					"ship",
+					"food",
+					"gold"
+				],
+				"key": "ship"
 			}
 		]
 	},
@@ -1654,36 +1683,15 @@ module.exports = {
 		"improvements": [
 			{
 				"type": "improvement",
-				"name": "Counsellor",
-				"free": "replaceCards",
-				"key": "counsellor"
-			},
-			{
-				"type": "improvement",
-				"name": "Gold Mine",
-				"reserve": "mine",
-				"key": "goldMine"
-			},
-			{
-				"type": "improvement",
 				"name": "Philosopher",
 				"free": "tutor",
 				"key": "philosopher"
 			},
 			{
 				"type": "improvement",
-				"name": "Build",
-				"action": "build",
-				"resource": [
-					"brick"
-				],
-				"key": "build"
-			},
-			{
-				"type": "improvement",
-				"name": "Providence",
-				"free": "draw2",
-				"key": "providence"
+				"name": "Cavalry",
+				"reserve": "invasionStrength",
+				"key": "cavalry"
 			},
 			{
 				"type": "improvement",
@@ -1696,44 +1704,15 @@ module.exports = {
 			},
 			{
 				"type": "improvement",
-				"name": "Levies",
-				"reserve": "levy",
-				"key": "levies"
-			},
-			{
-				"type": "improvement",
-				"name": "Merchant",
-				"benefit": "changeCardResource",
-				"key": "merchant"
-			},
-			{
-				"type": "improvement",
-				"name": "Ship",
-				"benefit": "transport",
-				"resource": [
-					"ship",
-					"food",
-					"gold"
-				],
-				"key": "ship"
-			},
-			{
-				"type": "improvement",
-				"name": "Quarry",
-				"reserve": "quarry",
-				"key": "quarry"
-			},
-			{
-				"type": "improvement",
-				"name": "Diplomat",
-				"action": "endWar",
-				"key": "diplomat"
-			},
-			{
-				"type": "improvement",
 				"name": "Mystic",
 				"free": "recur",
 				"key": "mystic"
+			},
+			{
+				"type": "improvement",
+				"name": "Gold Mine",
+				"reserve": "mine",
+				"key": "goldMine"
 			},
 			{
 				"type": "improvement",
@@ -1743,12 +1722,66 @@ module.exports = {
 			},
 			{
 				"type": "improvement",
-				"name": "Portal",
-				"benefit": "portal",
+				"name": "Scribe",
+				"reserve": "scribe",
+				"key": "scribe"
+			},
+			{
+				"type": "improvement",
+				"name": "Queen",
+				"reserve": "handSize",
+				"key": "queen"
+			},
+			{
+				"type": "improvement",
+				"name": "Build",
+				"action": "build",
 				"resource": [
-					"food"
+					"brick"
 				],
-				"key": "portal"
+				"key": "build"
+			},
+			{
+				"type": "improvement",
+				"name": "Reserve Army",
+				"reserve": "invasionImmune",
+				"resource": [
+					"army"
+				],
+				"key": "reserveArmy"
+			},
+			{
+				"type": "improvement",
+				"name": "Ranger",
+				"reserve": "ranger",
+				"resource": [
+					"brick"
+				],
+				"key": "ranger"
+			},
+			{
+				"type": "improvement",
+				"name": "Farming",
+				"reserve": "farming",
+				"key": "farming"
+			},
+			{
+				"type": "improvement",
+				"name": "Marauders",
+				"free": "removeArmy",
+				"key": "marauders"
+			},
+			{
+				"type": "improvement",
+				"name": "Counsellor",
+				"free": "replaceCards",
+				"key": "counsellor"
+			},
+			{
+				"type": "improvement",
+				"name": "Diplomat",
+				"action": "endWar",
+				"key": "diplomat"
 			},
 			{
 				"type": "improvement",
@@ -1759,15 +1792,6 @@ module.exports = {
 					"brick"
 				],
 				"key": "market"
-			},
-			{
-				"type": "improvement",
-				"name": "General",
-				"benefit": "substitute",
-				"resource": [
-					"army"
-				],
-				"key": "general"
 			}
 		],
 		"vpCards": [
@@ -1790,19 +1814,6 @@ module.exports = {
 				"key": "roads"
 			},
 			{
-				"name": "Lord of the Isles",
-				"type": "variable",
-				"x2": 1,
-				"x3": 1,
-				"key": "lordOfTheIsles"
-			},
-			{
-				"name": "Master of the Seas",
-				"type": "variable",
-				"x2": 2,
-				"key": "masterOfTheSeas"
-			},
-			{
 				"name": "Runestones",
 				"type": "variable",
 				"x2": 4,
@@ -1813,6 +1824,18 @@ module.exports = {
 				"type": "variable",
 				"x1": 4,
 				"key": "roadsideInns"
+			},
+			{
+				"name": "Citadel",
+				"type": "variable",
+				"x3": 1,
+				"key": "citadel"
+			},
+			{
+				"name": "Here be Dragons",
+				"type": "variable",
+				"x2": 3,
+				"key": "hereBeDragons"
 			}
 		]
 	}
